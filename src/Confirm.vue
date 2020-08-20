@@ -9,20 +9,20 @@
       <v-card-actions>
         <v-spacer/>
         <v-btn
-          v-if="Boolean(buttonFalseText)"
-          :color="buttonFalseColor"
-          :text="buttonFalseFlat"
-          @click="choose(false)"
-        >
-          {{ buttonFalseText }}
-        </v-btn>
-        <v-btn
           v-if="Boolean(buttonTrueText)"
           :color="buttonTrueColor"
           :text="buttonTrueFlat"
           @click="choose(true)"
         >
           {{ buttonTrueText }}
+        </v-btn>
+        <v-btn
+          v-if="Boolean(buttonFalseText)"
+          :color="buttonFalseColor"
+          :text="buttonFalseFlat"
+          @click="choose(false)"
+        >
+          {{ buttonFalseText }}
         </v-btn>
       </v-card-actions>
     </v-card>
