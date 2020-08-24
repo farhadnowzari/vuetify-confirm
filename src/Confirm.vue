@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import 'core-js/stable';
 import { VCard, VCardActions, VCardText, VDialog, VIcon, VToolbar, VToolbarTitle, VSpacer, VBtn } from 'vuetify/lib'
 
 export default {

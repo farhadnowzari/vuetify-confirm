@@ -25,9 +25,7 @@
   },
   "author": "Savaryn Yaroslav",
   "license": "MIT",
-  "dependencies": {
-    "core-js": "^3.6.5"
-  },
+  "dependencies": {},
   "keywords": [
     "vuetify",
     "confirm",
