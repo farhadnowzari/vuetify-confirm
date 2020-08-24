@@ -1,3 +1,4 @@
+import 'core-js/stable';
 import Confirm from './Confirm.vue'
 
 function Install (Vue, options = {}) {

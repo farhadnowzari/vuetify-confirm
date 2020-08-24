@@ -1,5 +1,6 @@
 'use strict';
 
+require('core-js/stable');
 var lib = require('vuetify/lib');
 
 //

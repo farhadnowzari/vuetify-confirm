@@ -1,3 +1,4 @@
+import 'core-js/stable';
 import { VBtn, VCard, VCardActions, VCardText, VDialog, VIcon, VSpacer, VToolbar, VToolbarTitle } from 'vuetify/lib';
 
 //
