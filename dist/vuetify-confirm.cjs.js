@@ -71,9 +71,17 @@ var script = {
       type: Boolean,
       default: true
     },
+    theme: {
+      type: String,
+      default: 'light'
+    },
     color: {
       type: String,
       default: 'warning'
+    },
+    backgroundColor: {
+      type: String,
+      default: 'white'
     },
     icon: {
       type: String,
@@ -222,7 +230,14 @@ var __vue_render__ = function () {
         return _vm.choose(false);
       }
     }
-  }, [_c("v-card", { attrs: { tile: "" } }, [Boolean(_vm.title) ? _c("v-toolbar", { attrs: { dark: "", color: _vm.color, dense: "", flat: "" } }, [Boolean(_vm.icon) ? _c("v-icon", { attrs: { left: "" } }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e(), _vm._v(" "), _c("v-toolbar-title", {
+  }, [_c("v-card", {
+    attrs: {
+      color: _vm.backgroundColor,
+      dark: _vm.theme === "dark",
+      light: _vm.theme === "light",
+      tile: ""
+    }
+  }, [Boolean(_vm.title) ? _c("v-toolbar", { attrs: { dark: "", color: _vm.color, dense: "", flat: "" } }, [Boolean(_vm.icon) ? _c("v-icon", { attrs: { left: "" } }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e(), _vm._v(" "), _c("v-toolbar-title", {
     staticClass: "white--text",
     domProps: { textContent: _vm._s(_vm.title) }
   })], 1) : _vm._e(), _vm._v(" "), _c("v-card-text", {

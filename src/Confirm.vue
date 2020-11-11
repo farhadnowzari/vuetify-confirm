@@ -1,6 +1,6 @@
 <template>
   <v-dialog eager @input="change" value="true" :max-width="width" :persistent="persistent" @keydown.esc="choose(false)">
-    <v-card tile>
+    <v-card :color="backgroundColor" :dark="theme === 'dark'" :light="theme === 'light'" tile>
       <v-toolbar v-if="Boolean(title)" dark :color="color" dense flat>
         <v-icon v-if="Boolean(icon)" left>{{ icon }}</v-icon>
         <v-toolbar-title class="white--text" v-text="title"/>
@@ -69,9 +69,17 @@ export default {
       type: Boolean,
       default: true
     },
+    theme: {
+      type: String,
+      default: 'light'
+    },
     color: {
       type: String,
       default: 'warning'
+    },
+    backgroundColor: {
+      type: String,
+      default: 'white'
     },
     icon: {
       type: String,
